@@ -1,3 +1,7 @@
+---
+permalink: /index.html
+---
+
 COGS 120 Group Econaut
 ====
 
