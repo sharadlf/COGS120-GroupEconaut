@@ -17,11 +17,18 @@ h3 {
   background-color: #C4C4C4;
   width: 152px;
   height: 152px;
-
+  display: block;
+  margin:0 auto;
+  text-align: center;
+  
 }
 
 .whole-tile {
   padding-bottom: 20px;
+  display: block;
+  margin:0 auto;
+  text-align: center;
+  
 }
 
 .car-tile h3 {
@@ -32,12 +39,9 @@ h3 {
 .car {
   width: 150px;
   display: block;
-  margin-left: auto;
-  margin-right: auto;
+  margin:0 auto;
   text-align: center;
-  vertical-align: middle;
-  margin-top: auto;
-  margin-bottom: auto;
+  
 }
 
 .product{
@@ -47,4 +51,7 @@ h3 {
 
 body{
   font-family: 'Montserrat', sans-serif;
+  display: block;
+  margin: 0 auto;
+  text-align: center;
 }
