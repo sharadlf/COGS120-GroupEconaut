@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Econaut</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300;400&family=Prata&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="public/css/styles.css">
+    <script>
+        function unHide(){
+            var test = document.getElementById("hidden");
+            test.style.display = "block";
+            document.getElementById("button").style.display = "none";
+        }
+    </script>
+</head>
+<body>
+    <a href="index1.html"><img src="public/images/back--v1.png" style="max-width: 2em;"></a>
+    <div class='top-container'>
+        <h1>Econaut</h1>
+        <h3>COMPARE RESULTS BELOW</h3>
+    </div>
+    
+    <div class='mid-container'>
+        <div class='whole-tile'>
+            <h2>2013 BMW 328i</h2>
+            <div class='car-tile' id="bmw">
+              <img class="car" src="public/images/2013.bmw.328i.png"  alt="2013 BMW 328i">
+            </div>
+            <h3>MPG:</h3>
+            <h4>22 City, 34 Hwy</h4>
+            <h3>Fuel Tank Capacity:</h3>
+            <h4>15.8 to 16.1 gal</h4>
+            <h3>Carbon Emission:</h3>
+            <h4>3.14 metric tons per year</h4>
+            <h3>Econaut Score:</h3>
+            <h4>43</h4>
+            
+        </div>
+    </div>
+
+    <button id="button" onclick="unHide();"> click to compare</button>
+
+    <div class='prius-container' id=hidden style="display:none">
+        <div class='whole-tile'>
+            <h2>2021 Toyota Prius</h2>
+            <div class='car-tile' id='prius'>
+                <img class="car" src="public/images/2021.toyota.prius.png" alt="2021 Toyota Prius">
+            </div>
+            <h3>MPG:</h3>
+            <h4>58 City, 53 Hwy</h4>
+            <h3>Fuel Tank Capacity:</h3>
+            <h4>10.6 to 11.3</h4>
+            <h3>Carbon Emission:</h3>
+            <h4>2.37 metric tons per year</h4>
+            <h3>Econaut Score:</h3>
+            <h4>66</h4>
+        </div>
+
+    </div>
+    
+    
+
+
+
+
+</body>
+</html>
