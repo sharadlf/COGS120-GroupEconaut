@@ -12,43 +12,48 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href = "/css/bootstrap-theme.css" rel="stylesheet">
   	<link rel="stylesheet" href="/css/styles.css">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
 </head>
 
 
 <body>
-	<div class="container">
 
+	<!-- Top Navigation Menu -->
+		<div class="topnav">
+		<a href="/" class="active">Home</a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<a href="/comparison">Comparison Page</a>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+	<div class="container">
 			<div class="jumbotron">
 				<h1>Econaut</h1>
 				<p>Select a vehicle to see how eco-friendly it is!</p>
 			</div>
 		</div>
-	
-	<!--<a href="index.handlebars"><img src="/images/back--v1.png" style="max-width: 2em;"></a>
-	<div class="product">
-		<h2>BMW 328i</h2>
-		<img class="car" src="/images/2013-bmw-328i.png"  alt="2013 BMW 328i-img" style="max-width:100%">
-		<h3>Econaut Score: 43</h3>
-		<p><b>Description:</b>
-	The 2021 BMW 3-series epitomizes the modern sports sedan with its comprehensive performance and innate sophistication. The German brand offers two phenomenal engines for this model—a 255-hp four-cylinder and a 385-hp straight-six—both of which are as quick as they are refined. There's also a plug-in hybrid for the green crowd. While we're saddened by BMW's decision to eliminate the
-		manual transmission, the perceptive eight-speed automatic is a worthy substitute. What's more, the 3's fantastic chassis can seamlessly shift from calm to frisky at a moment's notice. Unfortunately, its steering—although improved over the previous generation's—still lacks the tactility that enthusiasts once idolized. The 2021 3-series fulfills its mission as an entry-level premium sedan with ample cabin and trunk space as well as copious amounts of luxury and technology.</p>
-
-
-	<p>Emission Classification: Phase 1 Low Emission vehicle</p>
-	<p>MPG: 22 City, 34 Highway</p>
-
-	<button type ="button" class ="btn btn-secondary" onclick="location.href='comparison.html'">Compare</button>
 
 	
 
-
-
-	</div>-->
 	
-
-	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
-	<script src="https://code.jquery.com/jquery.js"></script>
-	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
-	<script src="/js/bootstrap.min.js"></script>
 </body>
 </html>
