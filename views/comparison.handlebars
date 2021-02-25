@@ -17,6 +17,9 @@
 	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
 	<script src="/js/bootstrap.min.js"></script>
 	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+
+	<script src="/public/js/Functions.js"></script>
+
 	<script>
 		function myFunction() {
 			var x = document.getElementById("myLinks");
@@ -50,7 +53,38 @@
             <h1>Econaut</h1>
             <p>Select a vehicle to see how eco-friendly it is!</p>
         </div>
+
     </div>
+
+	<div class="container">
+		{{#each BMW}}
+			<img src="images/{{image}}" class="comparisonimg">
+		{{/each}}
+		
+		{{#each Toyota}}
+		
+			<img src="images/{{image}}" class="comparisonimg">
+		{{/each}}
+
+		{{#each Honda}}
+			<img src="images/{{image}}" class="comparisonimg">
+		{{/each}}
+
+		{{#each Jeep}}
+			<img src="images/{{image}}" class="comparisonimg">
+		{{/each}}
+
+		{{#each Tesla}}
+			<img src="images/{{image}}" class="comparisonimg">
+		{{/each}}
+
+		</div>
+
+
+	
+	<div class="jumbotron" style="margin-top: 1em;">
+	<button type="button" class="btn btn-info">Comparison</button>
+	</div>
 	
 
 	
