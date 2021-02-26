@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Product Page</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300;400&family=Prata&display=swap" rel="stylesheet">
+  	<!-- Bootstrap -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href = "/css/bootstrap-theme.css" rel="stylesheet">
+  	<link rel="stylesheet" href="/css/styles.css">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+
+	<script src="/public/js/Functions.js"></script>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
+</head>
+
+
+<body>
+
+	<!-- Top Navigation Menu -->
+		<div class="topnav">
+		<a href="/" class="active">Home</a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<a href="/comparison">Comparison Page</a>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+	<div class="container">
+			<div class="jumbotron">
+				<h1>Econaut</h1>
+				<p>Select a vehicle to see how eco-friendly it is!</p>
+			</div>
+		</div>
+
+	
+
+	
+</body>
+</html>

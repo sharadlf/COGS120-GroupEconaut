@@ -1,4 +1,9 @@
-repo
+---
+permalink: /index.html
+---
+
+COGS 120 Group Econaut
 ====
 
-Project Description
+This is our repo for our final project for COGS 120/CSE 170.
+by Sharad Bhagwat, Ishaan Bose, and Joey Hoang

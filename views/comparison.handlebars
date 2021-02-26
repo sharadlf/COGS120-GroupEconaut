@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+	<meta charset="utf-8">
+	<meta name='viewport' content='width=device-width, initial-scale=1'>
+	<title>Product Page</title>
+	<link rel="preconnect" href="https://fonts.gstatic.com">
+  	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300;400&family=Prata&display=swap" rel="stylesheet">
+  	<!-- Bootstrap -->
+	<link href="/css/bootstrap.min.css" rel="stylesheet">
+	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
+	<link href = "/css/bootstrap-theme.css" rel="stylesheet">
+  	<link rel="stylesheet" href="/css/styles.css">
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+	<script src="https://code.jquery.com/jquery.js"></script>
+	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
+	<script src="/js/bootstrap.min.js"></script>
+	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+
+	<script src="/js/Functions.js"></script>
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
+</head>
+
+
+<body>
+
+	<!-- Top Navigation Menu -->
+		<div class="topnav">
+		<a href="/" class="active">Home</a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<a href="/productpage">Product Page</a>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+	<div class="container">
+        <div class="jumbotron">
+            <h1>Compare Cars</h1>
+            <p>Click any number of cars to see their details side-by-side!</p>
+						<p>Click the car again to close its details.</p>
+        </div>
+
+    </div>
+
+		<img src="/images/BMW_Expanded_short.svg" class="test2" id="328i" alt="pic-here">
+		<img src="/images/Prius_Expanded_short.svg" class="test2" id="prius" alt="pic-here">
+		<img src="/images/Camry_Expanded.svg" class="test2" id="camry" alt="pic-here">
+		<img src="/images/Jeep_Expanded.svg" class="test2" id="wrangler" alt="pic-here">
+		<img src="/images/Tesla_expanded.svg" class="test2" id="model_s" alt="pic-here">
+		<img src="/images/Civic_expanded.svg" class="test2" id="civic" alt="pic-here">
+
+		{{#each BMW}}
+		<div class="comparing">
+			<img src="https://m.media-amazon.com/images/I/71GN-crluuL._UY560_.jpg" alt="picture-here" class="hidden" id="test">
+		</div>
+		{{/each}}
+
+		<!--
+
+		{{#each Toyota}}
+		<div class="cars", id="{{id}}">
+			<img src="images/{{image}}" class="img">
+		</div>
+		{{/each}}
+
+		{{#each Honda}}
+		<div class="cars", id="{{id}}">
+			<img src="images/{{image}}" class="img">
+		</div>
+		{{/each}}
+
+		{{#each Jeep}}
+		<div class="cars">
+			<img src="images/{{image}}" class="img">
+		</div>
+		{{/each}}
+
+		{{#each Tesla}}
+		<div class="cars">
+			<img src="images/{{image}}" class="img">
+		</div>
+		{{/each}}
+
+		-->
+
+	<hr>
+
+	<div class="container">
+		{{#each BMW}}
+			<a href="https://www.google.com" class="testlink" id="328i">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+		{{/each}}
+
+		{{#each Toyota}}
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+		{{/each}}
+
+		{{#each Honda}}
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+		{{/each}}
+
+		{{#each Jeep}}
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+		{{/each}}
+
+		{{#each Tesla}}
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+		{{/each}}
+
+		</div>
+
+
+
+	<!--
+	<div class="jumbotron" style="margin-top: 1em;">
+	<button type="button" class="btn btn-info">Comparison</button>
+	</div>
+	-->
+
+
+
+</body>
+</html>
