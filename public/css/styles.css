@@ -20,7 +20,7 @@ h3 {
   display: block;
   margin:0 auto;
   text-align: center;
-  
+
 }
 
 .whole-tile {
@@ -28,7 +28,7 @@ h3 {
   display: block;
   margin:0 auto;
   text-align: center;
-  
+
 }
 
 .car-tile h3 {
@@ -41,7 +41,7 @@ h3 {
   display: block;
   margin:0 auto;
   text-align: center;
-  
+
 }
 
 .product{
@@ -92,4 +92,24 @@ body{
 
 .comparisonimg{
   margin: 1em;
+  max-width: 85%;
+}
+
+.hidden {
+  /* display: none; */
+}
+
+.test2 {
+  display: none;
+  margin: 1em;
+  text-align: center;
+  max-width: 85%;
+}
+
+.testlink {
+  max-width: 85%;
+}
+
+.jumbotron {
+  text-align: center;
 }

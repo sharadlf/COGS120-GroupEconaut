@@ -18,7 +18,7 @@
 	<script src="/js/bootstrap.min.js"></script>
 	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
 
-	<script src="/public/js/Functions.js"></script>
+	<script src="/js/Functions.js"></script>
 
 	<script>
 		function myFunction() {
@@ -50,43 +50,98 @@
 
 	<div class="container">
         <div class="jumbotron">
-            <h1>Econaut</h1>
-            <p>Select a vehicle to see how eco-friendly it is!</p>
+            <h1>Compare Cars</h1>
+            <p>Click any number of cars to see their details side-by-side!</p>
+						<p>Click the car again to close its details.</p>
         </div>
 
     </div>
 
-	<div class="container">
+		<img src="/images/BMW_Expanded_short.svg" class="test2" id="328i" alt="pic-here">
+		<img src="/images/Prius_Expanded_short.svg" class="test2" id="prius" alt="pic-here">
+		<img src="/images/Camry Card.svg" class="test2" id="camry" alt="pic-here">
+		<img src="/images/Jeep Card.svg" class="test2" id="wrangler" alt="pic-here">
+		<img src="/images/Tesla_expanded.svg" class="test2" id="model_s" alt="pic-here">
+		<img src="/images/Civic Card.svg" class="test2" id="civic" alt="pic-here">
+
 		{{#each BMW}}
-			<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+		<div class="comparing">
+			<img src="https://m.media-amazon.com/images/I/71GN-crluuL._UY560_.jpg" alt="picture-here" class="hidden" id="test">
+		</div>
 		{{/each}}
-		
+
+		<!--
+
 		{{#each Toyota}}
-		
-			<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+		<div class="cars", id="{{id}}">
+			<img src="images/{{image}}" class="img">
+		</div>
 		{{/each}}
 
 		{{#each Honda}}
-			<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+		<div class="cars", id="{{id}}">
+			<img src="images/{{image}}" class="img">
+		</div>
 		{{/each}}
 
 		{{#each Jeep}}
-			<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+		<div class="cars">
+			<img src="images/{{image}}" class="img">
+		</div>
 		{{/each}}
 
 		{{#each Tesla}}
-			<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+		<div class="cars">
+			<img src="images/{{image}}" class="img">
+		</div>
+		{{/each}}
+
+		-->
+
+	<hr>
+
+	<div class="container">
+		{{#each BMW}}
+			<a href="https://www.google.com" class="testlink" id="328i">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+		{{/each}}
+
+		{{#each Toyota}}
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+		{{/each}}
+
+		{{#each Honda}}
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+		{{/each}}
+
+		{{#each Jeep}}
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+		{{/each}}
+
+		{{#each Tesla}}
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
 		{{/each}}
 
 		</div>
 
 
-	
+
+	<!--
 	<div class="jumbotron" style="margin-top: 1em;">
 	<button type="button" class="btn btn-info">Comparison</button>
 	</div>
-	
+	-->
 
-	
+
+
 </body>
 </html>
