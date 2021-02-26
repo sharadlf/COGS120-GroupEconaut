@@ -58,7 +58,7 @@ body{
 
 /* Add a black background color to the top navigation */
 .topnav {
-  background-color: #333;
+  background-color: #5e5e5e;
   overflow: hidden;
 }
 
@@ -81,7 +81,7 @@ body{
 
 /* Add an active class to highlight the current page */
 .topnav a.active {
-  background-color: #4CAF50;
+  background-color: #2b2a68;
   color: white;
 }
 
