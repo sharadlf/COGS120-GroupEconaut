@@ -19,6 +19,8 @@
 	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
 
 	<script src="/public/js/Functions.js"></script>
+		<script src="/js/productpage.js"></script>
+		
 
 	
 	<script>
@@ -52,12 +54,35 @@
 	<div class="container">
 			<div class="jumbotron">
 				<h1>Econaut</h1>
-				<p>Select a vehicle to see how eco-friendly it is!</p>
+				<p>Your Selected Car: </p>
 			</div>
 		</div>
 
+
+		<h3>{{year}}{{testBrand}}{{name}}</h3>
+		<img src= "/image{{image}}" class="img">
+		<p>Description: {{name}}</p>
+		<p>Emission: {{emission}}</p>
+		<p>Fuelcap: {{fuelcap}}</p>
+		<p>Kelly Bluebook Score: {{score}}</p>
+		<p>Econaut Score: {{score}}</p>
+
+	
+		{{#each Honda}}
+		<div class="cars", id="{{id}}">
+			<h1>{{year}} {{brand}} {{model}}</h1>
+			<img src="images/{{image}}" class="img">
+		</div>
+		{{/each}}
+		
+
 	
 
+	
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
 	
 </body>
 </html>
