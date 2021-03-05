@@ -32,6 +32,10 @@
 			}
 		}
 	</script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+	</fb:login-button>
 </head>
 
 	<body>
