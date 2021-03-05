@@ -3,7 +3,7 @@ function checkLoginState() {
         statusChangeCallback(response);
     });
   }
-  function statusChangeCallback(response) {
+function statusChangeCallback(response) {
     console.log('Facebook login status changed.');
     console.log(response);
     // The response object is returned with a status field that lets the
@@ -15,4 +15,11 @@ function checkLoginState() {
           console.log('Successfully logged in with Facebook');
            FB.api('/me?fields=name,first_name,picture.width(480)', changeUser);
     }
-  }
+}
+function changeUser(response) {
+    //Add code to change name and image
+    console.log("text");
+   $("p.facebookLogin").hide();
+   $("h1#name").text(response.name);
+   $("img#photo").attr("src",response.picture.data.url); 
+}
