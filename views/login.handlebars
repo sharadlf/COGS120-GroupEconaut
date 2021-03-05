@@ -14,7 +14,11 @@
 	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
 	<script src="/js/bootstrap.min.js"></script>
 	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
-
+    </script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+	</fb:login-button>
 </head>
 <body>
     <div class="container">
