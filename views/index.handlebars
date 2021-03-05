@@ -17,6 +17,11 @@
 	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
 	<script src="/js/bootstrap.min.js"></script>
 	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+
+
+	<script src="/js/Functions.js"></script>
+
+
 	<script>
 		function myFunction() {
 			var x = document.getElementById("myLinks");
@@ -36,51 +41,53 @@
 		<a href="/" class="active">Home</a>
 			<!-- Navigation links (hidden by default) -->
 			<div id="myLinks">
-				<a href="/comparison">Comparison</a>
-				<a href="/login">Login</a>
+				<a href="/productpage">Product Page</a>
+				<a href="/comparison">Comparison Page</a>
 			</div>
 
 		</div>
+
 
 		<div class="container">
 
 			<div class="jumbotron">
 				<h1>Econaut</h1>
-				<p>Select 2-3 vehicles to see how eco-friendly they are!</p>
+				<p>Select a vehicle to see how eco-friendly it is!</p>
 			</div>
 		</div>
-		
+
 		{{#each BMW}}
 		<div class="cars">
-			<h1>{{year}} {{brand}} {{model}}</h1>
+
+			<a href="Productpage" class="product" id="BMW"><h1>{{year}} {{brand}} {{model}}</h1></a>
 			<img src="images/{{image}}" class="img">
-		</div>	
+		</div>
 		{{/each}}
 
 		{{#each Toyota}}
-		<div class="cars", id="{{id}}">
-			<h1>{{year}} {{brand}} {{model}}</h1>
+		<div class="cars", id="prius">
+			<a href="Productpage" class="product" id="Toyota"><h1>{{year}} {{brand}} {{model}}</h1></a>
 			<img src="images/{{image}}" class="img">
 		</div>
 		{{/each}}
 
 		{{#each Honda}}
 		<div class="cars", id="{{id}}">
-			<h1>{{year}} {{brand}} {{model}}</h1>
+			<a href="Productpage" class="product" id="Honda"><h1>{{year}} {{brand}} {{model}}</h1></a>
 			<img src="images/{{image}}" class="img">
 		</div>
 		{{/each}}
 
 		{{#each Jeep}}
 		<div class="cars">
-			<h1>{{year}} {{brand}} {{model}}</h1>
+			<a href="Productpage" class="product" id="Jeep"><h1>{{year}} {{brand}} {{model}}</h1></a>
 			<img src="images/{{image}}" class="img">
 		</div>
 		{{/each}}
 
 		{{#each Tesla}}
 		<div class="cars">
-			<h1>{{year}} {{brand}} {{model}}</h1>
+			<a href="Productpage" class="product" id="Tesla"><h1>{{year}} {{brand}} {{model}}</h1></a>
 			<img src="images/{{image}}" class="img">
 		</div>
 		{{/each}}

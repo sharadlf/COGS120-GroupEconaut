@@ -5,6 +5,7 @@ $(document).ready(function() {
 function initializePage(){
     // $(".comparing").show();
     $("a.testlink").click(cardShow);
+    $("a.product").click(productShow);
 
     /* function variableStore(e){
         e.preventDefault();
@@ -22,4 +23,11 @@ function cardShow(e){
   // $("#jeep1").toggle();
   // $(this).css("margin", "2em");
   console.log("is it working?")
+}
+
+function productShow(e){
+  //e.preventDefault();
+  var modelID = $(this).attr('id');
+  console.log("car brand: " + modelID);
+  localStorage.setItem("model1",modelID);
 }
