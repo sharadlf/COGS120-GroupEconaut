@@ -20,6 +20,8 @@
 
 	<script src="/js/Functions.js"></script>
 	<script src="/js/productpage.js"></script>
+	
+	
 
 
 
@@ -60,6 +62,21 @@
 		console.log("Car brand is: " + model1);
 		var modelobj = model1;
 		console.log("modelobj is: " + modelobj);
+
+		 var i;
+		for (i = 0; i < Carlist.length; i++) {
+			
+			//console.log(Carlist[i].brand);
+			
+			if(Carlist[i].brand == modelID){
+				console.log(Carlist[i].brand);
+				Carlist[i].carSelected = true;
+				console.log("changed");
+				break;
+			
+			}
+			
+		}
 	</script>
 
 
@@ -164,7 +181,22 @@
 
 	</script>
 
+<h1>DIVIDER IF THIS WORKS BELOW THEN YOURE GOOD</h1>
+	{{#each Carlist}}
 	
+		{{#if carSelected}}
+			<h1>Your Selected Car:</h1>
+			<h1>{{this.year}} {{this.brand}} {{this.model}}</h1>
+			<img src="images/{{this.image}}" class="img">
+			<p> Description: {{this.description}} </p>
+			<p> Emission: {{this.description}} </p>
+			<p> MPG: {{this.description}} </p>
+			<p> Fuel Cap: {{this.description}} </p>
+			<p> Score: {{this.description}} </p>
+		{{/if}}
+
+	{{/each}}
+
 
 
 
