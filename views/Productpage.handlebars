@@ -37,8 +37,8 @@
 	</script>
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
-	<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
-	</fb:login-button>
+	<!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+	</fb:login-button>-->
 </head>
 
 
@@ -50,6 +50,8 @@
 			<!-- Navigation links (hidden by default) -->
 			<div id="myLinks">
 				<a href="/comparison">Comparison Page</a>
+					<fb:login-button  style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
 			</div>
 			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -63,20 +65,8 @@
 		var modelobj = model1;
 		console.log("modelobj is: " + modelobj);
 
-		 var i;
-		for (i = 0; i < Carlist.length; i++) {
-			
-			//console.log(Carlist[i].brand);
-			
-			if(Carlist[i].brand == modelID){
-				console.log(Carlist[i].brand);
-				Carlist[i].carSelected = true;
-				console.log("changed");
-				break;
-			
-			}
-			
-		}
+	
+		
 	</script>
 
 
@@ -87,7 +77,7 @@
 				</p>
 			</div>
 		</div>
-
+<!--
 	<div style="clear : both">
 	<h2 id="bran"></h2>
 	<h2 id="mod"></h2>
@@ -179,23 +169,25 @@
 	document.getElementById("bran").innerHTML = brand;
 	document.getElementById("mod").innerHTML = model;
 
-	</script>
+	</script>-->
 
-<h1>DIVIDER IF THIS WORKS BELOW THEN YOURE GOOD</h1>
-	{{#each Carlist}}
+
+
 	
-		{{#if carSelected}}
-			<h1>Your Selected Car:</h1>
-			<h1>{{this.year}} {{this.brand}} {{this.model}}</h1>
-			<img src="images/{{this.image}}" class="img">
-			<p> Description: {{this.description}} </p>
-			<p> Emission: {{this.description}} </p>
-			<p> MPG: {{this.description}} </p>
-			<p> Fuel Cap: {{this.description}} </p>
-			<p> Score: {{this.description}} </p>
-		{{/if}}
+	<div class = "container">
+			<h1>{{year}} {{brand}} {{model}}</h1>
+			
+			<img src="images/{{image}}" alt="Car image" class="img">
+			<p> Description: {{description}} </p>
+			<p> Emission: {{emission}} </p>
+			<p> MPG: {{MPG}} </p>
+			<p> Fuel Cap: {{fuelcap}} </p>
+			<p> Score: {{score}} </p>
+			
 
-	{{/each}}
+	</div>
+		
+
 
 
 

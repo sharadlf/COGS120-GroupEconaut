@@ -113,3 +113,8 @@ body{
 .jumbotron {
   text-align: center;
 }
+
+
+.img{
+  max-width: 20em;
+}
