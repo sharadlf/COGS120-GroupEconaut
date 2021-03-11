@@ -19,6 +19,9 @@
 	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
 
 	<script src="/js/Functions.js"></script>
+	</script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
 
 	<script>
 		function myFunction() {
@@ -40,8 +43,12 @@
 		<a href="/" class="active">Home</a>
 			<!-- Navigation links (hidden by default) -->
 			<div id="myLinks">
-				<a href="/comparison">Comparison</a>
-				<a href="/login">Login</a>
+				<a href="/comparison">Compare Cars</a>
+				
+				<!--<a href="/login">Login</a>-->
+
+				<fb:login-button  style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
 			</div>
 			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
 			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
@@ -65,71 +72,269 @@
 		<img src="/images/Tesla_expanded.svg" class="test2" id="model_s" alt="pic-here">
 		<img src="/images/Civic_expanded.svg" class="test2" id="civic" alt="pic-here">
 
+	
+	<!-- This is the hidden content -->
+	<div class="wrapper-hidden">
+
+	
 		{{#each BMW}}
-		<div class="comparing">
-			<img src="https://m.media-amazon.com/images/I/71GN-crluuL._UY560_.jpg" alt="picture-here" class="hidden" id="test">
-		</div>
+		<div class = "car-tile-hidden" id={{id}}>
+			<h3>{{year}} {{brand}} {{model}}</h3>
+
+			<a href="https://www.google.com" class="testlink" >
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+				
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+
+			</div>
 		{{/each}}
 
-		<!--
-
 		{{#each Toyota}}
-		<div class="cars", id="{{id}}">
-			<img src="images/{{image}}" class="img">
-		</div>
+		<div class = "car-tile-hidden" id={{id}}>
+			<h3>{{year}} {{brand}} {{model}}</h3>
+
+			<a href="https://www.google.com" class="testlink" id="{{id}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			</div>
 		{{/each}}
 
 		{{#each Honda}}
-		<div class="cars", id="{{id}}">
-			<img src="images/{{image}}" class="img">
-		</div>
+			<div class = "car-tile-hidden" id={{id}}>
+			<h3>{{year}} {{brand}} {{model}}</h3>
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			</div>
 		{{/each}}
 
 		{{#each Jeep}}
-		<div class="cars">
-			<img src="images/{{image}}" class="img">
-		</div>
+		<div class = "car-tile-hidden" id={{id}}>
+				<h3>{{year}} {{brand}} {{model}}</h3>
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			</div>
 		{{/each}}
 
 		{{#each Tesla}}
-		<div class="cars">
-			<img src="images/{{image}}" class="img">
-		</div>
+	<div class = "car-tile-hidden" id={{id}}>
+				<h3>{{year}} {{brand}} {{model}}</h3>
+			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			</div>
 		{{/each}}
 
-		-->
+		{{#each Ford}}
+			<div class = "car-tile-hidden" id={{id}}>
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			</div>
+		{{/each}}
+
+		{{#each Nissan}}
+			<div class = "car-tile-hidden" id={{id}}>
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			</div>
+		{{/each}}
+
+		{{#each Mazda}}
+			<div class = "car-tile-hidden" id={{id}}>
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			</div>
+		{{/each}}
+
+		{{#each Subaru}}
+			<div class = "car-tile-hidden" id={{id}}>
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			</div>
+		{{/each}}
+
+		{{#each GMC}}
+			<div class = "car-tile-hidden" id={{id}}>
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			</div>
+		{{/each}}
+
+		{{#each Chevrolet}}
+			<div class = "car-tile-hidden" id={{id}}>
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			</div>
+		{{/each}}
+
+		</div>
+
+
 
 	<hr>
+		<!-- This is the SHOWN content -->
 
-	<div class="container">
+	<div class="wrapper">
+
+	
 		{{#each BMW}}
-			<a href="https://www.google.com" class="testlink" id="328i">
+		<div class = "car-tile">
+			<h3>{{year}} {{brand}} {{model}}</h3>
+			<a href="https://www.google.com" class="testlink"  id={{id}}>
 				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+				
 			</a>
+			</div>
 		{{/each}}
 
 		{{#each Toyota}}
-			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+		<div class = "car-tile">
+			<h3>{{year}} {{brand}} {{model}}</h3>
+
+			<a href="https://www.google.com" class="testlink" id="{{id}}">
 				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+
 			</a>
+			</div>
 		{{/each}}
 
 		{{#each Honda}}
-			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+		<div class = "car-tile">
+			<h3>{{year}} {{brand}} {{model}}</h3>
+			<a href="https://www.google.com" class="testlink" id="{{id}}">
 				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
 			</a>
+			</div>
 		{{/each}}
 
 		{{#each Jeep}}
-			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+		<div class = "car-tile">
+				<h3>{{year}} {{brand}} {{model}}</h3>
+			<a href="https://www.google.com" class="testlink" id="{{id}}">
 				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
 			</a>
+			</div>
 		{{/each}}
 
 		{{#each Tesla}}
-			<a href="https://www.google.com" class="testlink" id="{{identifier}}">
+		<div class = "car-tile">
+				<h3>{{year}} {{brand}} {{model}}</h3>
+			<a href="https://www.google.com" class="testlink" id="{{id}}">
 				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
 			</a>
+			</div>
+		{{/each}}
+
+		{{#each Ford}}
+		<div class = "car-tile">
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{id}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			</div>
+		{{/each}}
+
+		{{#each Nissan}}
+		<div class = "car-tile">
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{id}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			</div>
+		{{/each}}
+
+		{{#each Mazda}}
+		<div class = "car-tile">
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{id}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			</div>
+		{{/each}}
+
+		{{#each Subaru}}
+		<div class = "car-tile">
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{id}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			</div>
+		{{/each}}
+
+		{{#each GMC}}
+		<div class = "car-tile">
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{id}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			</div>
+		{{/each}}
+
+		{{#each Chevrolet}}
+		<div class = "car-tile">
+				<h3>{{year}} {{brand}} {{model}}</h3>
+		<a href="https://www.google.com" class="testlink" id="{{id}}">
+				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
+			</a>
+			</div>
 		{{/each}}
 
 		</div>

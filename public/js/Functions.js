@@ -31,8 +31,4 @@ function productShow(e){
   console.log("car brand: " + modelID);
   localStorage.setItem("model1",modelID);
 
-  
- 
-
-
 }

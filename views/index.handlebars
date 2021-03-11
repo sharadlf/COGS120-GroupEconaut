@@ -45,7 +45,7 @@
 			<!-- Navigation links (hidden by default) -->
 			<div id="myLinks">
 				<!--<a href="/productpage">Product Page</a>-->
-				<a href="/comparison">Comparison Page</a>
+				<a href="/comparison">Compare Cars</a>
 			<fb:login-button  style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
 			</fb:login-button>
 
@@ -61,88 +61,109 @@
 			<div class="jumbotron">
 				<h1>Econaut</h1>
 				<p>Select a vehicle to see how eco-friendly it is!</p>
+				<button>Request Car</button>
 			
 			</div>
 		</div>
+	<div class="container">
+		<form id="addFriendForm" role="form" method="get" action="/add">
+			<h3>Request a Car</h3>
+			<div class="form-group">
+			<label for="brand">Brand:</label>
+			<input type="text" class="form-control" id="brand" placeholder="brand" name="brand">
+			</div>
+			<div class="form-group">
+			<label for="model">Model:</label>
+			<input type="text" class="form-control" id="model" placeholder="model" name="model">
+			</div>
+			<input type="submit" id="submitBtn" class="btn btn-default" value="Request this Car"></input>
+		</form>
+		</div>
+		
 
+	<div class="container">
 	
+		
+			{{#each BMW}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
 
-		{{#each BMW}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+			{{#each Toyota}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
 
-		{{#each Toyota}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+			{{#each Honda}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
 
-		{{#each Honda}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+		
 
-		{{#each Jeep}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+			{{#each Jeep}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
 
-		{{#each Tesla}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+			{{#each Tesla}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
 
-		{{#each Ford}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+			{{#each Ford}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
 
-		{{#each Nissan}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+			{{#each Nissan}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
 
-		{{#each Mazda}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+			{{#each Mazda}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
 
-		{{#each Subaru}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+			{{#each Subaru}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
 
-		{{#each GMC}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+			{{#each GMC}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
 
-		{{#each Chevrolet}}
-		<div class="cars">
-			<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
+			{{#each Chevrolet}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+	
+	</div>
 
 
 
