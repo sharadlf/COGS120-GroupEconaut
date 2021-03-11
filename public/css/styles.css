@@ -54,6 +54,8 @@ body{
   display: block;
   margin: 0 auto;
   text-align: center;
+  background-color: white;
+  color: black;
 }
 
 /* Add a black background color to the top navigation */
@@ -95,9 +97,11 @@ body{
   max-width: 85%;
 }
 
+/*
 .hidden {
-  /* display: none; */
-}
+  /* display: none; 
+} 
+*/
 
 .test2 {
   display: none;
@@ -117,4 +121,14 @@ body{
 
 .img{
   max-width: 20em;
+}
+
+b {
+  font-weight:bolder;
+  font-size: 1.2em;
+}
+
+.dark-mode {
+  background-color: 313131;
+  color: white;
 }

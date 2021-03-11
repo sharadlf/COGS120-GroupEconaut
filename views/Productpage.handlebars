@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+	
 	<meta charset="utf-8">
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<title>Product Page</title>
@@ -12,14 +13,16 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href = "/css/bootstrap-theme.css" rel="stylesheet">
   	<link rel="stylesheet" href="/css/styles.css">
+	  <script src="/routes/productpage.js"></script>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
 	<script src="/js/bootstrap.min.js"></script>
 	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
-
+	
+	
 	<script src="/js/Functions.js"></script>
-	<script src="/js/productpage.js"></script>
+	
 	
 	
 
@@ -61,9 +64,9 @@
 
 	<script type="text/javascript">
 		var model1 = localStorage.getItem("model1");
-		console.log("Car brand is: " + model1);
+	//	console.log("Car brand is: " + model1);
 		var modelobj = model1;
-		console.log("modelobj is: " + modelobj);
+		//console.log("modelobj is: " + modelobj);
 
 	
 		
@@ -177,12 +180,12 @@
 	<div class = "container">
 			<h1>{{year}} {{brand}} {{model}}</h1>
 			
-			<img src="images/{{image}}" alt="Car image" class="img">
-			<p> Description: {{description}} </p>
-			<p> Emission: {{emission}} </p>
-			<p> MPG: {{MPG}} </p>
-			<p> Fuel Cap: {{fuelcap}} </p>
-			<p> Score: {{score}} </p>
+			<img src="/images/{{image}}" alt="Car image" class="img">
+			<p> <b>Description: </b>{{description}} </p>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
 			
 
 	</div>

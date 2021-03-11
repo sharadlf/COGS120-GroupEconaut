@@ -1,7 +1,7 @@
 {
     
     "cars": [{
-          "Threeseries":  {
+          "0":  {
                 "brand":"BMW",
                 "model":"330i",
                 "year":"2021",
@@ -14,10 +14,8 @@
                 "id" : 0,
                 "carSelected": false 
             }},
-
             {
-
-          "Prius": {
+          "1": {
                 "brand":"Toyota",
                 "model":"Prius",
                 "year":"2021",
@@ -27,10 +25,11 @@
                 "fuelcap":"10.6 to 11.3",
                 "score":"68",
                 "image":"2021.toyota.prius.png",
+                "id" : 1,
                 "carSelected": false 
             }},
             {
-          "Camry":  {
+          "2":  {
                 "brand":"Toyota",
                 "model":"Camry",
                 "year":"2021",
@@ -40,10 +39,11 @@
                 "fuelcap":"14.4 to 15.8 ",
                 "score":"",
                 "image":"toyota-camry.png",
+                "id" : 2,
                 "carSelected": false 
             }},
             {
-        "FourRunner": {
+        "3": {
                 "brand":"Toyota",
                 "model":"4Runner",
                 "year":"2016",
@@ -53,10 +53,11 @@
                 "fuelcap":"23.0",
                 "score":"",
                 "image":"toyota-4runner.png",
+                "id" : 3,
                 "carSelected": false 
             }},
             {
-          "Highlander":  {
+          "4":  {
                 "brand":"Toyota",
                 "model":"Highlander",
                 "year":"2021",
@@ -66,10 +67,11 @@
                 "fuelcap":"17.9",
                 "score":"",
                 "image":"toyota-highlander.png",
+                "id" : 4,
                 "carSelected": false 
             }},
             {
-           "Corolla": {
+           "5": {
                 "brand":"Toyota",
                 "model":"Corolla",
                 "year":"2021",
@@ -79,10 +81,11 @@
                 "fuelcap":"13.2",
                 "score":"",
                 "image":"corolla.png",
+                "id" : 5,
                 "carSelected": false 
             }},
             {
-           "Tacoma": {
+           "6": {
                 "brand":"Toyota",       
                 "model":"Tacoma",
                 "year":"2021",
@@ -92,11 +95,12 @@
                 "fuelcap":"21.1",
                 "score":"",
                 "image":"tacoma.png",
+                "id" : 6,
                 "carSelected": false 
             }},
 
             {
-          "RAVFour":   {
+          "7":   {
                 "brand":"Toyota",
                 "model":"RAV4",
                 "year":"2021",
@@ -106,10 +110,11 @@
                 "fuelcap":"14.5",
                 "score":"",
                 "image":"ra4.png",
+                "id" : 7,
                 "carSelected": false 
             }},
             {
-           "Civic":  {
+           "8":  {
                 "brand":"Honda",
                 "model":"Civic",
                 "year":"2021",
@@ -119,10 +124,11 @@
                 "fuelcap":"12.4",
                 "score":"",
                 "image":"2021-civic.png",
+                "id" : 8,
                 "carSelected": false 
             }},
             {
-           "Accord": {
+           "9": {
                 "brand":"Honda",
                 "model":"Accord",
                 "year":"2021",
@@ -132,10 +138,11 @@
                 "fuelcap":"14.8",
                 "score":"",
                 "image":"accord.png",
+                "id" : 9,
                 "carSelected": false 
             }},
             {
-           "CRV":  {
+           "10":  {
                 "brand":"Honda",
                 "model":"CRV",
                 "year":"2021",
@@ -145,10 +152,11 @@
                 "fuelcap":"14.0",
                 "score":"",
                 "image":"crv.png",
+                "id" : 10,
                 "carSelected": false 
             }},
             {
-        "Wranger" :    {
+        "11" :    {
                 "brand":"Jeep",
                 "model":"Wrangler",
                 "year":"2021",
@@ -158,10 +166,11 @@
                 "fuelcap":"21.5",
                 "score":"",
                 "image":"wrangler.png",
+                "id" : 11,
                 "carSelected": false 
             }},
             {
-           "Cherokee" : {
+           "12" : {
                 "brand":"Jeep",
                 "model":"Cherokee",
                 "year":"2021",
@@ -171,10 +180,11 @@
                 "fuelcap":"24.6",
                 "score":"",
                 "image":"grand-cherokee.png",
+                "id" : 12,
                 "carSelected": false 
             }},
             {
-           "ModelS":  {
+           "13":  {
                 "brand":"Tesla",
                 "model":"Model S",
                 "year":"2021",
@@ -184,10 +194,11 @@
                 "emission":"1.07",
                 "score":"",
                 "image":"2019.tesla.model.s.png",
+                "id" : 13,
                 "carSelected": false 
             }},
             {
-        "TransitConnect": {
+        "14": {
                 "brand":"Ford",
                 "model":"Transit Connect",
                 "year":"2020",
@@ -197,10 +208,11 @@
                 "fuelcap":"15.8",
                 "score":"",
                 "image":"transit.png",
+                "id" : 14,
                 "carSelected": false 
             }},
             {
-          "Escape":  {
+          "15":  {
                 "brand":"Ford",
                 "model":"Escape",
                 "year":"2021",
@@ -210,10 +222,11 @@
                 "fuelcap":"15.7",
                 "score":"",
                 "image":"escape.png",
+                "id" : 15,
                 "carSelected": false 
             }},
             {
-        "Explorer":    {
+        "16":    {
                 "brand":"Ford",
                 "model":"Explorer",
                 "year":"2021",
@@ -223,10 +236,11 @@
                 "fuelcap":"18.6",
                 "score":"",
                 "image":"explorer.png",
+                "id" : 16,
                 "carSelected": false 
             }},
             {
-         "FSeries":    {
+         "17":    {
                 "brand":"Ford",
                 "model":"F-Series",
                 "year":"2021",
@@ -236,10 +250,11 @@
                 "fuelcap":"30.6",
                 "score":"",
                 "image":"f-series.png",
+                "id" : 17,
                 "carSelected": false 
             }},
             {
-          "Altima":   {
+          "18":   {
                 "brand":"Nissan",
                 "model":"Altima",
                 "year":"2021",
@@ -249,10 +264,11 @@
                 "fuelcap":"16.2",
                 "score":"",
                 "image":"altima.png",
+                "id" : 18,
                 "carSelected": false 
             }},
             {
-          "Rogue":   {
+          "19":   {
                 "brand":"Nissan",
                 "model":"Rogue",
                 "year":"2021",
@@ -262,10 +278,11 @@
                 "fuelcap":"14.5",
                 "score":"",
                 "image":"rogue.png",
+                "id" : 19,
                 "carSelected": false 
             }},
             {
-         "CX5":   {
+         "20":   {
                 "brand":"Mazda",
                 "model":"CX-5",
                 "year":"2021",
@@ -275,10 +292,11 @@
                 "fuelcap":"15.3",
                 "score":"",
                 "image":"cx5.png",
+                "id" : 20,
                 "carSelected": false 
             }},
             {
-         "Outback":   {
+         "21":   {
                 "brand":"Subaru",
                 "model":"Outback",
                 "year":"2021",
@@ -288,10 +306,11 @@
                 "fuelcap":"18.5",
                 "score":"",
                 "image":"outback.png",
+                "id" : 21,
                 "carSelected": false 
             }},
             {
-        "Forester":     {
+        "22":     {
                 "brand":"Subaru",
                 "model":"Forester",
                 "year":"2021",
@@ -301,10 +320,11 @@
                 "fuelcap":"16.6",
                 "score":"4.09",
                 "image":"forester.png",
+                "id" : 22,
                 "carSelected": false 
             }},
             {
-         "Sierra":   {
+         "23":   {
                 "brand":"GMC",
                 "model":"Sierra",
                 "year":"2021",
@@ -314,10 +334,11 @@
                 "fuelcap":"28",
                 "score":"",
                 "image":"sierra.png",
+                "id" : 23,
                 "carSelected": false 
             }},
             {
-        "Equinox" :  {
+        "24" :  {
                 "brand":"Chevrolet",
                 "model":"Equinox",
                 "year":"2021",
@@ -327,10 +348,11 @@
                 "fuelcap":"15.6",
                 "score":"",
                 "image":"equinox.png",
+                "id" : 24,
                 "carSelected": false 
             }},
             {
-          "Silverado":  {
+          "25":  {
                 "brand":"Chevrolet",
                 "model":"Silverado",
                 "year":"2021",
@@ -340,6 +362,7 @@
                 "fuelcap":"28",
                 "score":"",
                 "image":"silverado.png",
+                "id" : 25,
                 "carSelected": false 
             }
      }]

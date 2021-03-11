@@ -38,8 +38,15 @@ if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+  //  app.post('/Productpage', function (req, res,) {
+    //  console.log(req.body)
+      //res.json(req.body)
+    //})
+
 app.get('/', index.view);
 app.get('/Productpage/:id', productpage.view);
+
+
 
 //app.get("/Productpage/:model",productpage.viewCar);
 
