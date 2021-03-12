@@ -40,10 +40,10 @@
 
 	<!-- Top Navigation Menu -->
 		<div class="topnav">
-		<a href="/" class="active">Home</a>
+		<a href="/" >Home</a>
 			<!-- Navigation links (hidden by default) -->
 			<div id="myLinks">
-				<a href="/comparison">Compare Cars</a>
+				<a href="/comparison" class="active">Compare Cars</a>
 				
 				<!--<a href="/login">Login</a>-->
 
@@ -56,21 +56,20 @@
 			</a>
 		</div>
 
-	<div class="container">
         <div class="jumbotron">
             <h1>Compare Cars</h1>
             <p>Click any number of cars to see their details side-by-side!</p>
 						<p>Click the car again to close its details.</p>
         </div>
 
-    </div>
-
+    
+<!--
 		<img src="/images/BMW_Expanded_short.svg" class="test2" id="328i" alt="pic-here">
 		<img src="/images/Prius_Expanded_short.svg" class="test2" id="prius" alt="pic-here">
 		<img src="/images/Camry_Expanded.svg" class="test2" id="camry" alt="pic-here">
 		<img src="/images/Jeep_Expanded.svg" class="test2" id="wrangler" alt="pic-here">
 		<img src="/images/Tesla_expanded.svg" class="test2" id="model_s" alt="pic-here">
-		<img src="/images/Civic_expanded.svg" class="test2" id="civic" alt="pic-here">
+		<img src="/images/Civic_expanded.svg" class="test2" id="civic" alt="pic-here">-->
 
 	
 	<!-- This is the hidden content -->
@@ -79,7 +78,7 @@
 	
 		{{#each BMW}}
 		<div class = "car-tile-hidden" id={{id}}>
-			<h3>{{year}} {{brand}} {{model}}</h3>
+			<h2>{{year}} {{brand}} {{model}}</h3>
 
 			<a href="https://www.google.com" class="testlink" >
 				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">

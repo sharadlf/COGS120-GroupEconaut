@@ -46,28 +46,40 @@
 			<div id="myLinks">
 				<!--<a href="/productpage">Product Page</a>-->
 				<a href="/comparison">Compare Cars</a>
+
+			</div>
+				<img src="images/Econaut.png" class ="logo">
+
 			<fb:login-button  style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
 			</fb:login-button>
 
-			
-				
-			</div>
 
 		</div>
 
 
-		<div class="container">
+		
 
 			<div class="jumbotron">
 				<h1>Econaut</h1>
 				<p>Select a vehicle to see how eco-friendly it is!</p>
-				<!--<button>Request Car</button>-->
+				<button>Add Car</button>
+				<script>
+					$("button").click(requestForm);
+
+					function requestForm(e){
+						e.preventDefault();
+							
+							
+							$(".container#addcar").toggle();
+							
+					}
+				</script>
 			
 			</div>
-		</div>
-	<div class="container">
+		
+	<div class="container" id = "addcar" style="display: none;">
 		<form id="addFriendForm" role="form" method="get" action="/add">
-			<h3>Request a Car</h3>
+			<h3>Add a Car</h3>
 			<div class="form-group">
 			<label for="brand">Brand:</label>
 			<input type="text" class="form-control" id="brand" placeholder="brand" name="brand">
@@ -77,14 +89,26 @@
 			<input type="text" class="form-control" id="model" placeholder="model" name="model">
 			</div>
 			
-			<input type="submit" id="submitBtn" class="btn btn-default" value="Request this Car"></input>
+			<input type="submit" id="submitBtn" class="btn btn-default" value="Add this Car"></input>
+			<script>	
+				$("input#submitBtn").click(function(){
+				$("p.appendP").append("	Your car has been added to our database, our team of researchers will add the eco stats soon!").delay(2000);
+				});
+
+				$("input#submitBtn").click(setTimeout);
+
+				setTimeout(function(){ alert("Your car has been added to our database, our team of researchers will add the eco stats soon!"); }, 50);
+			</script>
 		</form>
 		</div>
+
+		<p class = "appendP"></p>
 		
+	
 
 	<div class="container">
 	
-		
+	
 			{{#each BMW}}
 			<div class="cars">
 				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
@@ -164,6 +188,7 @@
 			</div>
 			{{/each}}
 	
+		
 	</div>
 
 
