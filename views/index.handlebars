@@ -39,6 +39,7 @@
 
 	<body>
 
+		
 		<!-- Top Navigation Menu -->
 		<div class="topnav">
 		<a href="/" class="active">Home</a>
@@ -48,9 +49,8 @@
 				<a href="/comparison">Compare Cars</a>
 
 			</div>
-				<img src="images/Econaut.png" class ="logo">
 
-			<fb:login-button  style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
+			<fb:login-button  class ="right" style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
 			</fb:login-button>
 
 
@@ -60,7 +60,8 @@
 		
 
 			<div class="jumbotron">
-				<h1>Econaut</h1>
+				<img src="images/Econaut.png" class ="logo">
+				<h1>Sustainable Car Database</h1>
 				<p>Select a vehicle to see how eco-friendly it is!</p>
 				<button>Add Car</button>
 				<script>
@@ -107,7 +108,9 @@
 	
 
 	<div class="container">
-	
+
+			
+			
 	
 			{{#each BMW}}
 			<div class="cars">

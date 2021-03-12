@@ -85,8 +85,11 @@ body{
 /* Add a black background color to the top navigation */
 .topnav {
   background-color:#d3e0ea ;
-  overflow: hidden;
-  
+ overflow: hidden;
+ border: 1px solid #2b2a68;
+ 
+ box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
+ 
 }
 
 /* Style the links inside the navigation bar */
@@ -170,28 +173,43 @@ b {
 
 }
 
+/* Media queries for mobile*/
 @media only screen and (max-width: 600px) {
-  .wrapper {
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 15px;
-    grid-auto-rows: 8%;
-    color: black;
- 
+    .wrapper {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 15px;
+      grid-auto-rows: 8%;
+      color: black;
+  
+    
+    }
+
+    .wrapper-hidden{
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 10px;
+      grid-auto-rows: 8%;
+      color: black;
+    }
+
+
+    .logo{
+      justify-content: center;
+      margin: auto;
+      max-width: 7em;
+      margin-bottom: 0px;
   
   }
 
-  .wrapper-hidden{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-    gap: 10px;
-    grid-auto-rows: 8%;
-    color: black;
+  .right {
+    position: relative;
+    margin-left: 120px;
+    right: 0px;
   }
-
- 
 }
 
+/* Non Media Queries*/
 .wrapper-hidden {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
@@ -205,10 +223,49 @@ b {
   font-size: 18px;
 }
 
-.logo{
-  justify-content: center;
-  margin-top: -10px;
-  margin: 0 auto;
-  max-width: 7em;
+  .logo{
 
+      justify-content: center;
+      /*
+      max-width: 10em;
+      margin-top: -20px;
+      
+     margin-right: 165px;*/
+     margin-bottom: -50px;
+     margin-top: -20px;
+    
+  }
+
+ 
+
+.right {
+  float: right;
+ margin-right: 25px;
 }
+
+#searchbar{ 
+   
+  padding:15px; 
+  border-radius: 10px; 
+} 
+
+input[type=text] { 
+   width: 30%; 
+   -webkit-transition: width 0.15s ease-in-out; 
+   transition: width 0.15s ease-in-out; 
+} 
+
+/* When the input field gets focus, 
+     change its width to 100% */
+input[type=text]:focus { 
+  width: 70%; 
+} 
+
+#list{ 
+ font-size:  1.5em; 
+ margin-left: 90px; 
+} 
+
+.searchCar{ 
+display: list-item;     
+}  
