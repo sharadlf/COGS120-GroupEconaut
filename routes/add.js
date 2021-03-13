@@ -1,22 +1,11 @@
-
-/*
- * GET home page.
- */
-
 let cars = require('../cars.json');
 let carlist = require('../carlist.json');
 
 
-//console.log(cars);
 
-exports.view = function(req, res){
-  res.render("index", cars);
-};
-
-/*
 exports.addCar = function(request, response) {   
 	// Your code goes here
-	//var length = carlist.cars.length;
+	var length = carlist.cars.length;
 	//console.log("LENGTH IS: " + length);
 	var newCar = { 
 		"26" : {
@@ -37,8 +26,9 @@ exports.addCar = function(request, response) {
 
 
 
-	response.render('index',carlist); 
+	//response.render('index',cars); 
+	
 	
 //	carlist.cars.push(newCar);
 
-}*/
+}
