@@ -79,7 +79,7 @@
                 "MPG":"31 City, 40 Hwy",
                 "emission":"5.59",
                 "fuelcap":"13.2",
-                "score":"48",
+                "score":"63",
                 "image":"corolla.png",
                 "id" : 5,
                 "carSelected": false
@@ -93,7 +93,7 @@
                 "MPG":"20 City, 23 Hwy",
                 "emission":"6.59",
                 "fuelcap":"21.1",
-                "score":"30",
+                "score":"34",
                 "image":"tacoma.png",
                 "id" : 6,
                 "carSelected": false
@@ -108,7 +108,7 @@
                 "MPG":"28 City, 35 Hwy",
                 "emission":"4.09",
                 "fuelcap":"14.5",
-                "score":"39",
+                "score":"46",
                 "image":"ra4.png",
                 "id" : 7,
                 "carSelected": false
@@ -122,7 +122,7 @@
                 "MPG":"32 City, 42 Hwy",
                 "emission":"3.39",
                 "fuelcap":"12.4",
-                "score":"52",
+                "score":"57",
                 "image":"2021-civic.png",
                 "id" : 8,
                 "carSelected": false
@@ -136,7 +136,7 @@
                 "MPG":"30 City, 38 Hwy",
                 "emission":"3.59",
                 "fuelcap":"14.8",
-                "score":"49",
+                "score":"52",
                 "image":"accord.png",
                 "id" : 9,
                 "carSelected": false
@@ -221,7 +221,7 @@
                 "MPG":"44 City, 37 Hwy",
                 "emission":"3.95",
                 "fuelcap":"15.7",
-                "score":"53",
+                "score":"66",
                 "image":"escape.png",
                 "id" : 15,
                 "carSelected": false
@@ -235,7 +235,7 @@
                 "MPG":"27 City, 28 Hwy",
                 "emission":"4.94",
                 "fuelcap":"18.6",
-                "score":"40",
+                "score":"48",
                 "image":"explorer.png",
                 "id" : 16,
                 "carSelected": false
@@ -263,7 +263,7 @@
                 "MPG":"28 City, 39 Hwy",
                 "emission":"3.70",
                 "fuelcap":"16.2",
-                "score":"39",
+                "score":"41",
                 "image":"altima.png",
                 "id" : 18,
                 "carSelected": false
