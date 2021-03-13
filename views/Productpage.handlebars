@@ -2,6 +2,7 @@
 <html lang="en" dir="ltr">
 
 <head>
+	
 	<meta charset="utf-8">
 	<meta name='viewport' content='width=device-width, initial-scale=1'>
 	<title>Product Page</title>
@@ -12,43 +13,196 @@
 	<link href="/css/bootstrap-theme.min.css" rel="stylesheet">
 	<link href = "/css/bootstrap-theme.css" rel="stylesheet">
   	<link rel="stylesheet" href="/css/styles.css">
-</head>
-
-
-<body>
-	<div class="container">
-
-			<div class="jumbotron">
-				<h1>Econaut</h1>
-				<p>Select a vehicle to see how eco-friendly it is!</p>
-			</div>
-		</div>
-	
-	<!--<a href="index.handlebars"><img src="/images/back--v1.png" style="max-width: 2em;"></a>
-	<div class="product">
-		<h2>BMW 328i</h2>
-		<img class="car" src="/images/2013-bmw-328i.png"  alt="2013 BMW 328i-img" style="max-width:100%">
-		<h3>Econaut Score: 43</h3>
-		<p><b>Description:</b>
-	The 2021 BMW 3-series epitomizes the modern sports sedan with its comprehensive performance and innate sophistication. The German brand offers two phenomenal engines for this model—a 255-hp four-cylinder and a 385-hp straight-six—both of which are as quick as they are refined. There's also a plug-in hybrid for the green crowd. While we're saddened by BMW's decision to eliminate the
-		manual transmission, the perceptive eight-speed automatic is a worthy substitute. What's more, the 3's fantastic chassis can seamlessly shift from calm to frisky at a moment's notice. Unfortunately, its steering—although improved over the previous generation's—still lacks the tactility that enthusiasts once idolized. The 2021 3-series fulfills its mission as an entry-level premium sedan with ample cabin and trunk space as well as copious amounts of luxury and technology.</p>
-
-
-	<p>Emission Classification: Phase 1 Low Emission vehicle</p>
-	<p>MPG: 22 City, 34 Highway</p>
-
-	<button type ="button" class ="btn btn-secondary" onclick="location.href='comparison.html'">Compare</button>
-
-	
-
-
-
-	</div>-->
-	
-
+	  <script src="/routes/productpage.js"></script>
 	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
 	<script src="/js/bootstrap.min.js"></script>
+	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+	
+	
+	<script src="/js/Functions.js"></script>
+	
+	
+	
+
+
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+	<!--<fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+	</fb:login-button>-->
+</head>
+
+
+<body>
+
+	<!-- Top Navigation Menu -->
+		<div class="topnav">
+		<a href="/" class="active">Home</a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+					
+				<a href="/comparison">Compare Cars</a>
+					<fb:login-button  class ="right" style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
+			</div>
+			<!-- "Hamburger menu" / "Bar icon" to toggle the navigation links -->
+			<a href="javascript:void(0);" class="icon" onclick="myFunction()">
+				<i class="fa fa-bars"></i>
+			</a>
+		</div>
+
+	<script type="text/javascript">
+		var model1 = localStorage.getItem("model1");
+	//	console.log("Car brand is: " + model1);
+		var modelobj = model1;
+		//console.log("modelobj is: " + modelobj);
+
+	
+		
+	</script>
+
+
+
+			<div class="jumbotron">
+				<img src="/images/Econaut.png" class ="logo">
+				<h1>Sustainability Check</h1>
+				<p>Your Selected Car: </p>
+				</p>
+			</div>
+	
+<!--
+	<div style="clear : both">
+	<h2 id="bran"></h2>
+	<h2 id="mod"></h2>
+	</div>
+	<img id="im" src="">
+	<p id='desc'></p>
+	<p id='emis'></p>
+	<p id='fuel'></p>
+	<p id='mpg'></p>
+	<p id='score'></p>
+
+	<script type="text/javascript">
+	var description;
+	var emission;
+	var brand;
+	var model;
+	var score;
+	var fuelcap;
+	var image;
+	var mpg;
+		switch (localStorage.getItem("model1")) {
+			case "BMW":
+				brand = "BMW";
+				model = "330i";
+				description = "The 2021 BMW 3-series epitomizes the modern sports sedan with its comprehensive performance and innate sophistication. The German brand offers two phenomenal engines for this model—a 255-hp four-cylinder and a 385-hp straight-six—both of which are as quick as they are refined. There's also a plug-in hybrid for the green crowd. While we're saddened by BMW's decision to eliminate the manual transmission, the perceptive eight-speed automatic is a worthy substitute. What's more, the 3's fantastic chassis can seamlessly shift from calm to frisky at a moment's notice. Unfortunately, its steering—although improved over the previous generation's—still lacks the tactility that enthusiasts once idolized. The 2021 3-series fulfills its mission as an entry-level premium sedan with ample cabin and trunk space as well as copious amounts of luxury and technology.";
+				mpg = "26 City, 36 Hwy"
+				emission = "3.95";
+				fuelcap = "15.6";
+				score = "43";
+				image = "330i.png";
+				break;
+			case "Toyota":
+				brand = "Toyota";
+				model = "Prius";
+				description = "The Prius offers the best of both worlds: impressive fuel economy and the flexibility of electric charging.";
+				mpg = "58 City, 53 Hwy"
+				emission = "2.37";
+				fuelcap = "10.6 to 11.3";
+				score = "68";
+				image = "2021.toyota.prius.png";
+				break;
+			case "Honda":
+				brand = "Honda";
+				model = "Civic";
+				description = "The 2021 Civic Sedan features aggressive lines and refined features that make it stand out from the crowd. Signature C-shaped taillights, a sleek profile and a bold Sport trim add to its fierce personality.";
+				mpg = "32 City, 42 Hwy"
+				emission = "3.39";
+				fuelcap = "12.4";
+				score = "45";
+				image = "2021-civic.png";
+				break;
+			case "Jeep":
+				brand = "Jeep";
+				model = "Wrangler";
+				description = "The 2021 Jeep® Wrangler is a getaway of its own, with an adventure-inspired cabin featuring elevated craftsmanship and comfort-laden conveniences like the available Trail Rail™ system and the Jeep Utility Grid for cargo storage.";
+				mpg = "22 City, 29 Hwy"
+				emission = "5.65";
+				fuelcap = "21.5";
+				score = "33";
+				image = "wrangler.png";
+				break;
+			case "Tesla":
+				brand = "Tesla";
+				model = "Model S";
+				description = "Long Range and Plaid platforms unite powertrain and battery technologies for unrivaled performance, range and efficiency. New module and pack thermal architecture allows faster charging and gives you more power and endurance in all conditions.";
+				mpg = "121 City, 112 Hwy"
+				emission = "1.07";
+				fuelcap = "N/A";
+				score = "88";
+				image = "2019.tesla.model.s.png";
+				break;
+			case "Ford":
+				brand = "Ford";
+				model = "Transit Connect";
+				description = "Engineered to withstand the severity of everyday on-the-job duty. Configure a Transit Connect Cargo Van with a vocational upfit that precisely matches your business.";
+				mpg = "24 City, 29 Hwy"
+				emission = "5.39";
+				fuelcap = "15.8";
+				score = "37";
+				image = "transit.png";
+				break;
+		}
+	document.getElementById("desc").innerHTML = "Description: " + description;
+	document.getElementById("emis").innerHTML = "Emission: " + emission;
+	document.getElementById("mpg").innerHTML = "MPG: " + mpg;
+	document.getElementById("fuel").innerHTML = "Fuelcap: " + fuelcap;
+	document.getElementById("score").innerHTML = "Eco-Score: " + score;
+	document.getElementById("im").src = image;
+	document.getElementById("bran").innerHTML = brand;
+	document.getElementById("mod").innerHTML = model;
+
+	</script>-->
+
+
+
+	
+	<div class = "container" style="color: black;">
+			<h1>{{year}} {{brand}} {{model}}</h1>
+			
+			<img src="/images/{{image}}" alt="Car image" class="img">
+			<p> <b>Description: </b>{{description}} </p>
+			<p> <b>Emission:</b> {{emission}} </p>
+			<p> <b>MPG:</b> {{MPG}} </p>
+			<p> <b>Fuel Cap: </b> {{fuelcap}} </p>
+			<p><b> Score: </b>{{score}} </p>
+			
+
+	</div>
+		
+
+
+
+
+
+
+	<!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
+    <script src="https://code.jquery.com/jquery.js"></script>
+    <!-- Include all compiled plugins (below), or include individual files as needed -->
+    <script src="/js/bootstrap.min.js"></script>
+		<script type="text/javascript">document.getElementById("modelID").innerHTML = model1;</script>
+
 </body>
 </html>

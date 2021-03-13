@@ -9,8 +9,9 @@ var path = require('path');
 var handlebars = require('express3-handlebars')
 
 var index = require('./routes/index');
-var productpage = require('./routes/productpage'); 
+var productpage = require('./routes/productpage');
 var comparison = require('./routes/comparison');
+var add = require('./routes/add');
 // Example route
 // var user = require('./routes/user');
 
@@ -31,13 +32,27 @@ app.use(express.session());
 app.use(app.router);
 app.use(express.static(path.join(__dirname, 'public')));
 
+
+
 // development only
 if ('development' == app.get('env')) {
   app.use(express.errorHandler());
 }
 
+  //  app.post('/Productpage', function (req, res,) {
+    //  console.log(req.body)
+      //res.json(req.body)
+    //})
+
 app.get('/', index.view);
-app.get('/productpage', productpage.view);
+app.get('/add',add.addCar);
+app.get('/Productpage/:id', productpage.view);
+
+
+
+//app.get("/Productpage/:model",productpage.viewCar);
+
+
 app.get('/comparison', comparison.view);
 // Example route
 // app.get('/users', user.list);

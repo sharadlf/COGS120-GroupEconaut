@@ -4,6 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+
 	<title>Econaut</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300;400&family=Prata&display=swap" rel="stylesheet">
@@ -16,57 +18,199 @@
 	<script src="https://code.jquery.com/jquery.js"></script>
 	<!-- Include all compiled plugins (blelow), or include individual files as needed -->
 	<script src="/js/bootstrap.min.js"></script>
+	<!-- Toggle between showing and hiding the navigation menu links when the user clicks on the hamburger menu / bar icon -->
+
+
+	<script src="/js/Functions.js"></script>
+
+
+	<script>
+		function myFunction() {
+			var x = document.getElementById("myLinks");
+			if (x.style.display === "block") {
+				x.style.display = "none";
+			} else {
+				x.style.display = "block";
+			}
+		}
+	</script>
+	{{> facebook}}
+	<script src="/js/facebook.js"></script>
+	
 </head>
 
 	<body>
-		<div class="container">
+
+		
+		<!-- Top Navigation Menu -->
+		<div class="topnav">
+		<a href="/" class="active">Home</a>
+			<!-- Navigation links (hidden by default) -->
+			<div id="myLinks">
+				<!--<a href="/productpage">Product Page</a>-->
+				<a href="/comparison">Compare Cars</a>
+
+			</div>
+
+			<fb:login-button  class ="right" style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button>
+
+
+		</div>
+
+
+		
 
 			<div class="jumbotron">
-				<h1>Econaut</h1>
+				<img src="images/Econaut.png" class ="logo">
+				<h1>Sustainable Car Database</h1>
 				<p>Select a vehicle to see how eco-friendly it is!</p>
-			</div>
-		</div>
-		
-		{{#each BMW}}
-		<div class="cars">
-			<h1>{{year}} {{brand}} {{model}}</h1>
-			<img src="images/{{image}}" class="img">
-		</div>	
-		{{/each}}
+				<button>Add Car</button>
+				<script>
+					$("button").click(requestForm);
 
-		{{#each Toyota}}
-		<div class="cars", id="{{id}}">
-			<h1>{{year}} {{brand}} {{model}}</h1>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
-
-		{{#each Honda}}
-		<div class="cars", id="{{id}}">
-			<h1>{{year}} {{brand}} {{model}}</h1>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
-
-		{{#each Jeep}}
-		<div class="cars">
-			<h1>{{year}} {{brand}} {{model}}</h1>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
-
-		{{#each Tesla}}
-		<div class="cars">
-			<h1>{{year}} {{brand}} {{model}}</h1>
-			<img src="images/{{image}}" class="img">
-		</div>
-		{{/each}}
-
-
-		
+					function requestForm(e){
+						e.preventDefault();
+							
+							
+							$(".container#addcar").toggle();
+							
+					}
+				</script>
 			
+			</div>
 		
+	<div class="container" id = "addcar" style="display: none; color: black">
+		<form id="addFriendForm" role="form" method="get" action="/add">
+			<h3>Request a Car to be Added</h3>
+			<div class="form-group">
+			<label for="brand">Brand:</label>
+			<input type="text" class="form-control" id="brand" placeholder="brand" name="brand">
+			</div>
+			<div class="form-group">
+			<label for="model">Model:</label>
+			<input type="text" class="form-control" id="model" placeholder="model" name="model">
+			</div>
+			
+			<input type="submit" id="submitBtn" class="btn btn-default" value="Add this Car"></input>
+			<script>	
+				$("input#submitBtn").click(function(){
+					
+				$("p.appendP").append("	Your car has been added to our database, our team of researchers will add the eco stats soon!");
+				 setTimeout(function() {
+					//self.html('Save');
+					
+				}, 2000);
+				});
+
+				//$("input#submitBtn").click(setTimeout);
+
+				//setTimeout(function(){ alert("Your car has been added to our database, our team of researchers will add the eco stats soon!"); }, 50);
+			</script>
+		</form>
+		</div>
+
+		<p class = "appendP" style="color: black;"></p>
+		
+	
+
+
+	<div class="container">
+
+
+
+			<!-- Search Bar Insert Here -->
+			
+			
+	
+			{{#each BMW}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+
+			{{#each Toyota}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+
+			{{#each Honda}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+
+		
+
+			{{#each Jeep}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+
+			{{#each Tesla}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+
+			{{#each Ford}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+
+			{{#each Nissan}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+
+			{{#each Mazda}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+
+			{{#each Subaru}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+
+			{{#each GMC}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+
+			{{#each Chevrolet}}
+			<div class="cars">
+				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
+				<img src="images/{{image}}" class="img">
+			</div>
+			{{/each}}
+	
+		
+	</div>
+
+
+
 
 	
+
+		
+
 </body>
 </html>
