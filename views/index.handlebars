@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-	
+
 
 	<title>Econaut</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
@@ -36,12 +36,13 @@
 	</script>
 	{{> facebook}}
 	<script src="/js/facebook.js"></script>
-	
+
 </head>
 
 	<body>
+		<div id="fb-root"></div>
+		<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=520061528989020&autoLogAppEvents=1" nonce="X7EwrZTU"></script>
 
-		
 		<!-- Top Navigation Menu -->
 		<div class="topnav">
 		<a href="/" class="active">Home</a>
@@ -52,14 +53,14 @@
 
 			</div>
 
-			<fb:login-button  class ="right" style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
-			</fb:login-button>
-
+			<!-- <fb:login-button  class ="right" style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
+			</fb:login-button> -->
+			<div class="fb-login-button" data-width="" data-size="small" data-button-type="login_with" data-layout="default" data-auto-logout-link="true" data-use-continue-as="false"></div>
 
 		</div>
 
 
-		
+
 
 			<div class="jumbotron">
 				<img src="images/Econaut.png" class ="logo">
@@ -71,15 +72,15 @@
 
 					function requestForm(e){
 						e.preventDefault();
-							
-							
+
+
 							$(".container#addcar").toggle();
-							
+
 					}
 				</script>
-			
+
 			</div>
-		
+
 	<div class="container" id = "addcar" style="display: none; color: black">
 		<form id="addFriendForm" role="form" method="get" action="/add">
 			<h3>Request a Car to be Added</h3>
@@ -91,15 +92,15 @@
 			<label for="model">Model:</label>
 			<input type="text" class="form-control" id="model" placeholder="model" name="model">
 			</div>
-			
+
 			<input type="submit" id="submitBtn" class="btn btn-default" value="Add this Car"></input>
-			<script>	
+			<script>
 				$("input#submitBtn").click(function(){
-					
+
 				$("p.appendP").append("	Your car has been added to our database, our team of researchers will add the eco stats soon!");
 				 setTimeout(function() {
 					//self.html('Save');
-					
+
 				}, 2000);
 				});
 
@@ -111,8 +112,8 @@
 		</div>
 
 		<p class = "appendP" style="color: black;"></p>
-		
-	
+
+
 
 
 	<div class="container">
@@ -120,9 +121,9 @@
 
 
 			<!-- Search Bar Insert Here -->
-			
-			
-	
+
+
+
 			{{#each BMW}}
 			<div class="cars">
 				<a href="Productpage/{{id}}" class="product" id="{{id}}"><h1>{{year}} {{brand}} {{model}}</h1></a>
@@ -144,7 +145,7 @@
 			</div>
 			{{/each}}
 
-		
+
 
 			{{#each Jeep}}
 			<div class="cars">
@@ -201,16 +202,16 @@
 				<img src="images/{{image}}" class="img">
 			</div>
 			{{/each}}
-	
-		
+
+
 	</div>
 
 
 
 
-	
 
-		
+
+
 
 </body>
 </html>

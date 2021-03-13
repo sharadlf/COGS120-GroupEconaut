@@ -37,14 +37,15 @@
 
 
 <body>
-
+	<div id="fb-root"></div>
+	<script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js#xfbml=1&version=v10.0&appId=520061528989020&autoLogAppEvents=1" nonce="X7EwrZTU"></script>
 	<!-- Top Navigation Menu -->
 		<div class="topnav">
 		<a href="/" >Home</a>
 			<!-- Navigation links (hidden by default) -->
 			<div id="myLinks">
 				<a href="/comparison" class="active">Compare Cars</a>
-				
+
 				<!--<a href="/login">Login</a>-->
 
 				<fb:login-button class="right" style = "text-align:right; margin-top: 15px;" ;scope="public_profile,email" onlogin="checkLoginState();">
@@ -63,7 +64,7 @@
 						<p>Click the car again to close its details.</p>
         </div>
 
-    
+
 <!--
 		<img src="/images/BMW_Expanded_short.svg" class="test2" id="328i" alt="pic-here">
 		<img src="/images/Prius_Expanded_short.svg" class="test2" id="prius" alt="pic-here">
@@ -72,18 +73,18 @@
 		<img src="/images/Tesla_expanded.svg" class="test2" id="model_s" alt="pic-here">
 		<img src="/images/Civic_expanded.svg" class="test2" id="civic" alt="pic-here">-->
 
-	
+
 	<!-- This is the hidden content -->
 	<div class="wrapper-hidden">
 
-	
+
 		{{#each BMW}}
 		<div class = "car-tile-hidden" id={{id}}>
 			<h2>{{year}} {{brand}} {{model}}</h3>
 
 			<a href="https://www.google.com" class="testlink" >
 				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
-				
+
 			</a>
 			<p> <b>Emission:</b> {{emission}} </p>
 			<p> <b>MPG:</b> {{MPG}} </p>
@@ -234,13 +235,13 @@
 
 	<div class="wrapper">
 
-	
+
 		{{#each BMW}}
 		<div class = "car-tile">
 			<h3>{{year}} {{brand}} {{model}}</h3>
 			<a href="https://www.google.com" class="testlink"  id={{id}}>
 				<img src="images/{{image}}" class="comparisonimg" id="{{identifier}}">
-				
+
 			</a>
 			</div>
 		{{/each}}

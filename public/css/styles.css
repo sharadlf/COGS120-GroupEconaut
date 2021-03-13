@@ -35,7 +35,7 @@ h3 {
 }
 
 .car-tile-hidden{
-  
+
   max-width:20em ;
   border-radius: 10%;
   display: none;
@@ -87,9 +87,9 @@ body{
   background-color:#d3e0ea ;
  overflow: hidden;
  border: 1px solid #2b2a68;
- 
+
  box-shadow: 0px 8px 8px -6px rgba(0,0,0,.5);
- 
+
 }
 
 /* Style the links inside the navigation bar */
@@ -127,8 +127,8 @@ body{
 
 /*
 .hidden {
-  /* display: none; 
-} 
+  /* display: none;
+}
 */
 
 .test2 {
@@ -181,8 +181,8 @@ b {
       gap: 15px;
       grid-auto-rows: 8%;
       color: black;
-  
-    
+
+
     }
 
     .wrapper-hidden{
@@ -199,13 +199,13 @@ b {
       margin: auto;
       max-width: 7em;
       margin-bottom: 0px;
-  
+
   }
 
-  .right {
+  .fb-login-button {
     position: relative;
-    margin-left: 120px;
     right: 0px;
+    margin-top: 20px;
   }
 }
 
@@ -229,18 +229,19 @@ b {
       /*
       max-width: 10em;
       margin-top: -20px;
-      
+
      margin-right: 165px;*/
      margin-bottom: -50px;
      margin-top: -20px;
-    
+
   }
 
- 
 
-.right {
+
+.fb-login-button {
   float: right;
- margin-right: 25px;
+  margin-right: 25px;
+  margin-top: 20px;
 }
 
 .appendP{
