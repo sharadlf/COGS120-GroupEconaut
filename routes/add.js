@@ -26,7 +26,8 @@ exports.addCar = function(request, response) {
 
 
 
-	response.render('index',cars); 
+	//response.render('index',cars); 
+	
 	
 //	carlist.cars.push(newCar);
 

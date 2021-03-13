@@ -4,6 +4,8 @@
 <head>
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	
+
 	<title>Econaut</title>
 	<link rel="preconnect" href="https://fonts.gstatic.com">
 	<link href="https://fonts.googleapis.com/css2?family=Merriweather:wght@300&family=Montserrat:wght@300;400&family=Prata&display=swap" rel="stylesheet">
@@ -78,9 +80,9 @@
 			
 			</div>
 		
-	<div class="container" id = "addcar" style="display: none;">
+	<div class="container" id = "addcar" style="display: none; color: black">
 		<form id="addFriendForm" role="form" method="get" action="/add">
-			<h3>Add a Car</h3>
+			<h3>Request a Car to be Added</h3>
 			<div class="form-group">
 			<label for="brand">Brand:</label>
 			<input type="text" class="form-control" id="brand" placeholder="brand" name="brand">
@@ -93,17 +95,22 @@
 			<input type="submit" id="submitBtn" class="btn btn-default" value="Add this Car"></input>
 			<script>	
 				$("input#submitBtn").click(function(){
-				$("p.appendP").append("	Your car has been added to our database, our team of researchers will add the eco stats soon!").delay(2000);
+					
+				$("p.appendP").append("	Your car has been added to our database, our team of researchers will add the eco stats soon!");
+				 setTimeout(function() {
+					//self.html('Save');
+					
+				}, 2000);
 				});
 
-				$("input#submitBtn").click(setTimeout);
+				//$("input#submitBtn").click(setTimeout);
 
-				setTimeout(function(){ alert("Your car has been added to our database, our team of researchers will add the eco stats soon!"); }, 50);
+				//setTimeout(function(){ alert("Your car has been added to our database, our team of researchers will add the eco stats soon!"); }, 50);
 			</script>
 		</form>
 		</div>
 
-		<p class = "appendP"></p>
+		<p class = "appendP" style="color: black;"></p>
 		
 	
 
@@ -113,6 +120,7 @@
 
 
 			<!-- Search Bar Insert Here -->
+			
 			
 	
 			{{#each BMW}}
