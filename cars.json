@@ -9,10 +9,10 @@
                     "MPG":"26 City, 36 Hwy",
                     "emission":"3.95",
                     "fuelcap":"15.6",
-                    "score":"43",
+                    "score":"48",
                     "image":"330i.png",
                     "id" : 0,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ],
 
@@ -28,9 +28,9 @@
                     "score":"68",
                     "image":"2021.toyota.prius.png",
                     "id" : 1,
-                    "carSelected": false 
+                    "carSelected": false
                 },
-                
+
                 {
                     "brand":"Toyota",
                     "model":"Camry",
@@ -39,10 +39,10 @@
                     "MPG":"28 City, 39 Hwy",
                     "emission":"3.49",
                     "fuelcap":"14.4 to 15.8 ",
-                    "score":"",
+                    "score":"56",
                     "image":"toyota-camry.png",
                     "id" : 2,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Toyota",
@@ -52,10 +52,10 @@
                     "MPG":"17 City, 22 Hwy",
                     "emission":"5.94",
                     "fuelcap":"23.0",
-                    "score":"",
+                    "score":"31",
                     "image":"toyota-4runner.png",
                     "id" : 3,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Toyota",
@@ -65,10 +65,10 @@
                     "MPG":"21 City, 29 Hwy",
                     "emission":"5.15",
                     "fuelcap":"17.9",
-                    "score":"",
+                    "score":"38",
                     "image":"toyota-highlander.png",
                     "id" : 4,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Toyota",
@@ -78,23 +78,23 @@
                     "MPG":"31 City, 40 Hwy",
                     "emission":"5.59",
                     "fuelcap":"13.2",
-                    "score":"",
+                    "score":"63",
                     "image":"corolla.png",
                     "id" : 5,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
-                    "brand":"Toyota",       
+                    "brand":"Toyota",
                     "model":"Tacoma",
                     "year":"2021",
                     "description":"The 2021 Toyota Tacoma is outfitted with specially engineered parts and accessories so you can take on the world’s gnarliest terrain. It’s time to get out there and tackle your next big adventure. ",
                     "MPG":"20 City, 23 Hwy",
                     "emission":"6.59",
                     "fuelcap":"21.1",
-                    "score":"",
+                    "score":"34",
                     "image":"tacoma.png",
                     "id" : 6,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Toyota",
@@ -104,10 +104,10 @@
                     "MPG":"28 City, 35 Hwy",
                     "emission":"4.09",
                     "fuelcap":"14.5",
-                    "score":"",
+                    "score":"46",
                     "image":"ra4.png",
                     "id" : 7,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ],
 
@@ -120,10 +120,10 @@
                     "MPG":"32 City, 42 Hwy",
                     "emission":"3.39",
                     "fuelcap":"12.4",
-                    "score":"",
+                    "score":"57",
                     "image":"2021-civic.png",
                     "id" : 8,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Honda",
@@ -133,10 +133,10 @@
                     "MPG":"30 City, 38 Hwy",
                     "emission":"3.59",
                     "fuelcap":"14.8",
-                    "score":"",
+                    "score":"52",
                     "image":"accord.png",
                     "id" : 9,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Honda",
@@ -146,10 +146,10 @@
                     "MPG":"28 City, 34 Hwy",
                     "emission":"3.95",
                     "fuelcap":"14.0",
-                    "score":"",
+                    "score":"47",
                     "image":"crv.png",
                     "id" : 10,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ],
 
@@ -162,10 +162,10 @@
                     "MPG":"22 City, 29 Hwy",
                     "emission":"5.65",
                     "fuelcap":"21.5",
-                    "score":"",
+                    "score":"31",
                     "image":"wrangler.png",
                     "id" : 11,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Jeep",
@@ -175,29 +175,29 @@
                     "MPG":"19 City, 26 Hwy",
                     "emission":"4.56",
                     "fuelcap":"24.6",
-                    "score":"",
+                    "score":"29",
                     "image":"grand-cherokee.png",
                     "id" : 12,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ],
 
-            "Tesla":[  
+            "Tesla":[
                 {
                     "brand":"Tesla",
                     "model":"Model S",
                     "year":"2021",
                     "description":"Long Range and Plaid platforms unite powertrain and battery technologies for unrivaled performance, range and efficiency. New module and pack thermal architecture allows faster charging and gives you more power and endurance in all conditions.",
                     "MPGe":"121 City, 112 Hwy",
-                    "Range":"387 to 520 mi battery-only", 
+                    "Range":"387 to 520 mi battery-only",
                     "emission":"1.07",
-                    "score":"",
+                    "score":"80",
                     "image":"2019.tesla.model.s.png",
                     "id" : 13,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ],
-            
+
             "Ford":[
                 {
                     "brand":"Ford",
@@ -207,10 +207,10 @@
                     "MPG":"24 City, 29 Hwy",
                     "emission":"5.39",
                     "fuelcap":"15.8",
-                    "score":"",
+                    "score":"43",
                     "image":"transit.png",
                     "id" : 14,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Ford",
@@ -220,10 +220,10 @@
                     "MPG":"44 City, 37 Hwy",
                     "emission":"3.95",
                     "fuelcap":"15.7",
-                    "score":"",
+                    "score":"66",
                     "image":"escape.png",
                     "id" : 15,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Ford",
@@ -233,10 +233,10 @@
                     "MPG":"27 City, 28 Hwy",
                     "emission":"4.94",
                     "fuelcap":"18.6",
-                    "score":"",
+                    "score":"48",
                     "image":"explorer.png",
                     "id" : 16,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Ford",
@@ -246,10 +246,10 @@
                     "MPG":"25 City, 26 Hwy",
                     "emission":"5.39",
                     "fuelcap":"30.6",
-                    "score":"",
+                    "score":"34",
                     "image":"f-series.png",
                     "id" : 17,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ],
             "Nissan":[
@@ -261,10 +261,10 @@
                     "MPG":"28 City, 39 Hwy",
                     "emission":"3.70",
                     "fuelcap":"16.2",
-                    "score":"",
+                    "score":"41",
                     "image":"altima.png",
                     "id" : 18,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Nissan",
@@ -274,10 +274,10 @@
                     "MPG":"27 City, 35 Hwy",
                     "emission":"4.09",
                     "fuelcap":"14.5",
-                    "score":"",
+                    "score":"48",
                     "image":"rogue.png",
                     "id" : 19,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ],
             "Mazda":[
@@ -289,10 +289,10 @@
                     "MPG":"25 City, 31 Hwy",
                     "emission":"4.23",
                     "fuelcap":"15.3",
-                    "score":"",
+                    "score":"44",
                     "image":"cx5.png",
                     "id" : 20,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ],
             "Subaru":[
@@ -304,10 +304,10 @@
                     "MPG":"26 City, 33 Hwy",
                     "emission":"4.56",
                     "fuelcap":"18.5",
-                    "score":"",
+                    "score":"44",
                     "image":"outback.png",
                     "id" : 21,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Subaru",
@@ -315,12 +315,12 @@
                     "year":"2021",
                     "description":"The Subaru Forester is a versatile SUV with advanced technology & safety, a roomy interior and all-weather capability.",
                     "MPG":"26 City, 33 Hwy",
-                    "emission":"",
+                    "emission":"4.09",
                     "fuelcap":"16.6",
-                    "score":"4.09",
+                    "score":"47",
                     "image":"forester.png",
                     "id" : 22,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ],
             "GMC":[
@@ -332,10 +332,10 @@
                     "MPG":"23 City, 30 Hwy",
                     "emission":"4.56",
                     "fuelcap":"28",
-                    "score":"",
+                    "score":"32",
                     "image":"sierra.png",
                     "id" :23,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ],
             "Chevrolet":[
@@ -347,10 +347,10 @@
                     "MPG":"26 City, 31 Hwy",
                     "emission":"4.23",
                     "fuelcap":"15.6",
-                    "score":"",
+                    "score":"40",
                     "image":"equinox.png",
                     "id" : 24,
-                    "carSelected": false 
+                    "carSelected": false
                 },
                 {
                     "brand":"Chevrolet",
@@ -360,11 +360,11 @@
                     "MPG":"23 City, 33 Hwy",
                     "emission":"4.39",
                     "fuelcap":"28",
-                    "score":"",
+                    "score":"35",
                     "image":"silverado.png",
                     "id" : 25,
-                    "carSelected": false 
+                    "carSelected": false
                 }
             ]
-    
+
 }
